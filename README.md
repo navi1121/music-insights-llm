@@ -40,6 +40,11 @@ LLM (Ollama)
     ↓
 Final Response
 ```
+
+## rebuild vectorstore
+
+python src/main.py
+
 ## example queries
 "how has my music tate changed over time?"  
 "what genres did I listen to the most in 2023?"  

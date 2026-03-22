@@ -1,0 +1,14 @@
+#python
+venv/
+__pycache__/
+*.pyc
+
+#data files
+my_spotify_data/
+
+#vector db
+vectorstore/
+
+#os stuff
+.DS_Store
+Thumbs.db
