@@ -10,11 +10,11 @@ BATCH_SIZE  = 64
 
 def build_documents(df: pd.DataFrame) -> list[Document]:
     """
-    Group play events by (artist, track) and create ONE document per unique song.
-    Reduces 50k+ rows to ~2k-5k documents — the main speed fix.
+    decided to group songs played by (artist, track) and create one document per unique song.
+    reducing around 50k+ rows to ~2k-5k documents — the main speed fix.
     """
     docs = []
-    grouped = df.groupby([
+    grouped = df.groupby([ #grouping by artist and track to get unique songs
         "master_metadata_album_artist_name",
         "master_metadata_track_name",
     ])
