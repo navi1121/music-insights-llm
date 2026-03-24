@@ -28,7 +28,7 @@ Final Response
 python src/temp.py
 
 ## example queries
-"how has my music tate changed over time?"  
+"how has my music taste changed over time?"  
 
 ## evaluation 
 ...
